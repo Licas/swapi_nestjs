@@ -12,4 +12,9 @@ export class AppController {
   getHello() {
     return this.appService.getHello();
   }
+
+  @Get('/namedhello')
+  getNamedHello() {
+    return this.appService.getNamedHello('Pippo');
+  }
 }

@@ -5,4 +5,8 @@ export class AppService {
   getHello() {
     return 'Hello World!';
   }
+
+  getNamedHello(name) {
+    return `Hello ${name}!`
+  }
 }
